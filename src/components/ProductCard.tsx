@@ -3,7 +3,7 @@ import type { Product } from "../types/product";
 
 import CallModal from "./CallModal";
 import "./ProductCard.css";
-import Review from "./Review";
+
 
 interface Props {
   product: Product;
