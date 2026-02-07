@@ -1,0 +1,301 @@
+/* ===== Page Background ===== */
+.contact-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0d47a1, #020024);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+/* Select field text */
+.form-group select {
+  color: #ffffff;
+}
+
+/* Dropdown options (important fix) */
+.form-group select option {
+  color: #111;          /* dark text */
+  background: #ffffff; /* white background */
+}
+
+
+/* ===== Glass Card ===== */
+.contact-container {
+  width: 100%;
+  max-width: 620px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  padding: 44px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+  animation: floatCard 6s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes floatCard {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* ===== Header ===== */
+.contact-header h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.contact-header p {
+  text-align: center;
+  color: #cfd8dc;
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+
+/* ===== Form ===== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* Input group */
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label */
+.form-group label {
+  color: #e3f2fd;
+  font-size: 13px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* Inputs */
+.form-group input,
+.form-group select {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.35s ease;
+}
+
+/* Placeholder */
+.form-group input::placeholder {
+  color: #cfd8dc;
+}
+
+/* Focus animation */
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #64b5f6;
+  box-shadow: 0 0 0 4px rgba(100, 181, 246, 0.3);
+  transform: scale(1.02);
+}
+
+/* Button */
+.submit-btn {
+  margin-top: 12px;
+  background: linear-gradient(135deg, #42a5f5, #1e88e5);
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: all 0.35s ease;
+  box-shadow: 0 15px 30px rgba(30, 136, 229, 0.5);
+}
+
+/* Button hover */
+.submit-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(30, 136, 229, 0.7);
+}
+
+/* Button click */
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 32px;
+  }
+
+  .contact-header h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 26px;
+    border-radius: 18px;
+  }
+
+  .contact-header h1 {
+    font-size: 22px;
+  }
+}/* ===== Page Background ===== */
+.contact-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0d47a1, #020024);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+/* ===== Glass Card ===== */
+.contact-container {
+  width: 100%;
+  max-width: 620px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  padding: 44px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+  animation: floatCard 6s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes floatCard {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* ===== Header ===== */
+.contact-header h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.contact-header p {
+  text-align: center;
+  color: #cfd8dc;
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+
+/* ===== Form ===== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* Input group */
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label */
+.form-group label {
+  color: #e3f2fd;
+  font-size: 13px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* Inputs */
+.form-group input,
+.form-group select {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.35s ease;
+}
+
+/* Placeholder */
+.form-group input::placeholder {
+  color: #cfd8dc;
+}
+
+/* Focus animation */
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #64b5f6;
+  box-shadow: 0 0 0 4px rgba(100, 181, 246, 0.3);
+  transform: scale(1.02);
+}
+
+/* Button */
+.submit-btn {
+  margin-top: 12px;
+  background: linear-gradient(135deg, #42a5f5, #1e88e5);
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: all 0.35s ease;
+  box-shadow: 0 15px 30px rgba(30, 136, 229, 0.5);
+}
+
+/* Button hover */
+.submit-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(30, 136, 229, 0.7);
+}
+
+/* Button click */
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 32px;
+  }
+
+  .contact-header h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 26px;
+    border-radius: 18px;
+  }
+
+  .contact-header h1 {
+    font-size: 22px;
+  }
+}
+
