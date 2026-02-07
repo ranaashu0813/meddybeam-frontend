@@ -1,3 +1,4 @@
+
 import "./Contact.css";
 
 const Contact = () => {
@@ -44,6 +45,7 @@ const Contact = () => {
         </form>
 
       </div>
+     
     </div>
   );
 };

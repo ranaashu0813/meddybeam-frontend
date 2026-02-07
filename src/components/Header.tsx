@@ -10,7 +10,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className="navbar-logo">
-          MEDBREAM <span>CARE</span>
+          MEDBEAM <span>CARE</span>
         </div>
 
         {/* Menu */}
