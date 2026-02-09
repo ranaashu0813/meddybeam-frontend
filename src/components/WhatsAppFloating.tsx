@@ -17,7 +17,7 @@ export default function FloatingContact() {
         className="w-14 h-14 flex items-center justify-center rounded-full bg-blue-600 shadow-lg hover:bg-blue-700 transition"
         aria-label="Call now"
       >
-        <FaPhoneAlt className="text-white text-2xl" />
+        <FaPhoneAlt size={24} color="white" />
       </a>
 
       {/* WHATSAPP ICON WITH HOVER */}
@@ -29,7 +29,7 @@ export default function FloatingContact() {
       >
         {/* ICON */}
         <div className="w-14 h-14 flex items-center justify-center rounded-full bg-green-500 shadow-lg">
-          <FaWhatsapp className="text-white text-3xl" />
+          <FaWhatsapp size={30} color="white" />
         </div>
 
         {/* EXPANDING TEXT */}

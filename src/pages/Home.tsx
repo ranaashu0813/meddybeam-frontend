@@ -1,7 +1,7 @@
 import products from "../data/products";
 import ProductCard from "../components//ProductCard";
 import "./home.css";
-import Review from "../components/Review";
+
 
 
 const Home = () => {
