@@ -39,14 +39,15 @@ const Footer = () => {
         {/* Contact */}
         <div className="footer-section">
           <h3>Contact</h3>
-          <p>📞 +91 99999 99999</p>
-          <p>✉️ support@cpapstore.com</p>
+          <p>📞 +91 8929283292</p>
+          <p>✉️ medbeam@gmail.com</p>
           <p>📍 India</p>
         </div>
 
       </div>
-
+    
       <div className="footer-bottom">
+        <h1>Since 1998 </h1>
         © {new Date().getFullYear()} CPAP Store. All rights reserved.
       </div>
     </footer>

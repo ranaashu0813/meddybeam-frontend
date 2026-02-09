@@ -16,6 +16,7 @@ const Navbar = () => {
         {/* Menu */}
         <nav className={`navbar-menu ${menuOpen ? "active" : ""}`}>
           <a href="/">Home</a>
+          <a href="/products">Products</a>
           <a href="/privacy-policy">Privacy Policy</a>
           <a href="/terms">Terms & Conditions</a>
           <a href="/contact" className="contact-btn">Contact</a>

@@ -7,7 +7,7 @@ interface Props {
 }
 
 const CallModal = ({ onClose, productName, description }: Props) => {
-  const phone = "919999999999";
+  const phone = "8929283292";
   const whatsapp = `https://wa.me/${phone}?text=Hi, I want to know more about ${productName}`;
 
   return (

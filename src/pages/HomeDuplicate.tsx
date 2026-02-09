@@ -14,6 +14,7 @@ const Home = () => {
           <ProductCard key={p.id} product={p} />
         ))}
       </div>
+      <Review />
     </section>
     
   );

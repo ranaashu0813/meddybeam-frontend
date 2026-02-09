@@ -6,13 +6,17 @@ import { Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
+import HomeDuplicate from "./pages/HomeDuplicate";
+import WhatsAppFloating from "./components/WhatsAppFloating";
 
 function App() {
   return (
     <div className="app-layout">
       <Header />
+      <WhatsAppFloating />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomeDuplicate />} />
+        <Route path="/products" element={<Home/>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
