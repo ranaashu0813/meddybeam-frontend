@@ -1,7 +1,7 @@
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 
-const PHONE_NUMBER = "8929283292";
-const WHATSAPP_NUMBER = "8929283292";
+const PHONE_NUMBER = "+918929283292";
+const WHATSAPP_NUMBER = "918929283292";
 const MESSAGE = "Hello, I want to know more about your medical devices.";
 
 export default function FloatingContact() {

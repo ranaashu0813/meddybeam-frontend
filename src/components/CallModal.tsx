@@ -7,8 +7,8 @@ interface Props {
 }
 
 const CallModal = ({ onClose, productName, description }: Props) => {
-  const phone = "8929283292";
-  const whatsapp = `https://wa.me/${phone}?text=Hi, I want to know more about ${productName}`;
+  const phone = "+918929283292";
+  const whatsapp = `https://wa.me/918929283292?text=Hi, I want to know more about ${productName}`;
 
   return (
     <div className="modal-overlay" onClick={onClose}>
