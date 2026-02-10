@@ -1,6 +1,5 @@
 import { useState } from "react";
 import type { Product } from "../types/product";
-
 import CallModal from "./CallModal";
 import "./ProductCard.css";
 
