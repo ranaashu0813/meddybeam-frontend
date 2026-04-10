@@ -1,19 +1,12 @@
-import products from "../data/products";
-import ProductCard from "../components//ProductCard";
 import "./home.css";
-
-
+import { MedbeamContainer, AboutUs,Categories} from "../components/index";
 
 const Home = () => {
   return (
     <section className="home">
-      <h1>Products & Services</h1>
-
-      <div className="grid">
-        {products.map((p) => (
-          <ProductCard key={p.id} product={p} />
-        ))}
-      </div>
+      <MedbeamContainer />
+      <Categories />
+      <AboutUs />
     </section>
     
   );

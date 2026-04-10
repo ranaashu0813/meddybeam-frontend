@@ -10,15 +10,15 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className="navbar-logo">
-          MEDBEAM <span>CARE</span>
+          <div className="beam_header"> MEDBEAM <span>CARE</span></div>
+          <div className="till_now">Since 1988</div>
+         
         </div>
 
         {/* Menu */}
         <nav className={`navbar-menu ${menuOpen ? "active" : ""}`}>
           <a href="/">Home</a>
-          <a href="/products">Products</a>
-          <a href="/privacy-policy">Privacy Policy</a>
-          <a href="/terms">Terms & Conditions</a>
+          <a href="/products">Shop</a>
           <a href="/contact" className="contact-btn">Contact</a>
         </nav>
 

@@ -1,0 +1,13 @@
+.medbeam-container{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 40px 0;
+    background: #35088a;
+    text-align: center;
+    color: white;
+}

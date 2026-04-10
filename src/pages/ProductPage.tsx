@@ -1,10 +1,10 @@
 import products from "../data/products";
-import ProductCard from "../components//ProductCard";
+import ProductCard from "../components/ProductCard";
 import "./home.css";
-import Review from "../components/Review";
 
 
-const Home = () => {
+
+export default function ProductPage() {
   return (
     <section className="home">
       <h1>Products & Services</h1>
@@ -14,10 +14,6 @@ const Home = () => {
           <ProductCard key={p.id} product={p} />
         ))}
       </div>
-      <Review />
     </section>
-    
   );
-};
-
-export default Home;
+}

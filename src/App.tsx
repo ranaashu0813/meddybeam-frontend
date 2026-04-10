@@ -4,10 +4,10 @@ import Footer from "./components/Footer";
 import "./index.css";
 import { Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Terms from "./pages/Terms";
-import HomeDuplicate from "./pages/HomeDuplicate";
+
+
 import WhatsAppFloating from "./components/WhatsAppFloating";
+import ProductPage from "./pages/ProductPage";
 
 function App() {
   return (
@@ -15,11 +15,10 @@ function App() {
       <Header />
       <WhatsAppFloating />
       <Routes>
-        <Route path="/" element={<HomeDuplicate />} />
-        <Route path="/products" element={<Home/>} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/products" element={<ProductPage />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms" element={<Terms />} />
+        
       </Routes>
       <Footer />
     </div>
