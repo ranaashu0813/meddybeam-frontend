@@ -17,15 +17,15 @@ const Navbar = () => {
 
         {/* Menu */}
         <nav className={`navbar-menu ${menuOpen ? "active" : ""}`}>
-           <NavLink to="/" className="nav-link">
+           <NavLink to="/" className="nav-link" onClick={() => setMenuOpen(false)}>
     Home
   </NavLink>
 
-  <NavLink to="/shop" className="nav-link">
+  <NavLink to="/shop" className="nav-link" onClick={() => setMenuOpen(false)}>
     Shop
   </NavLink>
 
-  <NavLink to="/contact" className="contact-btn">
+  <NavLink to="/contact" className="contact-btn" onClick={() => setMenuOpen(false)}>
     Contact
   </NavLink>
         </nav>
