@@ -1,37 +1,15 @@
 import React from "react";
 import "./Categories.css";
-import image1 from "../assets/i1.jpeg";
-import image2 from "../assets/i5.jpeg";
-import image3 from "../assets/i3.jpeg";
-type Category = {
-  id: number;
-  title: string;
-  image: string;
-};
+import { useNavigate } from "react-router-dom";
 
-const categories: Category[] = [
-  {
-    id: 1,
-    title: "CPAP Machine",
-    image: image1,
-  },
-  {
-    id: 2,
-    title: "BiPAP Machine",
-    image: image2,
-  },
-  {
-    id: 3,
-    title: "Mask & Accessories",
-    image: image3,
-  },
-];
+import CategoriesData from "../data/Catagories";  
 
-const Categories: React.FC = () => {
+export const Categories: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="categories-section">
       
-      {/* TEXT */}
       <div className="categories-text">
         <h1>Our Categories</h1>
         <p>
@@ -39,24 +17,23 @@ const Categories: React.FC = () => {
         </p>
       </div>
 
-      {/* IMAGES */}
       <div className="categories-container">
-        {categories.map((cat) => (
+        {CategoriesData.map((cat) => (
           <div key={cat.id} className="category-card">
 
-            <div className="circle-outer">
-
-              {/* Blur Layer */}
+            {/* 👇 CLICKABLE */}
+            <div
+              className="circle-outer clickable"
+            onClick={() => navigate(`/shop/${cat.link}`)}
+            >
               <div
                 className="circle-bg"
                 style={{ backgroundImage: `url(${cat.image})` }}
               ></div>
 
-              {/* Inner Circle */}
               <div className="circle-inner">
                 <img src={cat.image} alt={cat.title} />
               </div>
-
             </div>
 
             <p className="category-title">{cat.title}</p>
@@ -66,5 +43,3 @@ const Categories: React.FC = () => {
     </div>
   );
 };
-
-export default Categories;

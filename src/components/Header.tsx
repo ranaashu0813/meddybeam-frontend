@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Header.css";
-
+import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -17,9 +17,17 @@ const Navbar = () => {
 
         {/* Menu */}
         <nav className={`navbar-menu ${menuOpen ? "active" : ""}`}>
-          <a href="/">Home</a>
-          <a href="/products">Shop</a>
-          <a href="/contact" className="contact-btn">Contact</a>
+           <NavLink to="/" className="nav-link">
+    Home
+  </NavLink>
+
+  <NavLink to="/shop" className="nav-link">
+    Shop
+  </NavLink>
+
+  <NavLink to="/contact" className="contact-btn">
+    Contact
+  </NavLink>
         </nav>
 
         {/* Hamburger */}

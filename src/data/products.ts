@@ -11,55 +11,71 @@ import image8 from "../assets/i8.jpeg";
 
 
 const products: Product[] = [
+
   {
     id: 1,
     name: "CPAP Machine",
+    category: "cpap",   // ✅ ADD THIS
     description: "Advanced sleep therapy device for sleep apnea patients.",
     image: image1,
+    price: 15000,
   },
   {
     id: 2,
     name: "BiPAP Machine",
+    category: "bipap",  // ✅ ADD THIS
     description: "Provides two pressure levels for comfortable breathing.",
     image: image2,
+    price: 25000,
   },
   {
     id: 3,
     name: "Oxygen Concentrator",
+    category: "oxygen", // ✅ ADD THIS
     description: "High efficiency oxygen support for home and clinical use.",
     image: image3,
+    price: 30000,
   },
   {
     id: 4,
-    name: "Sleep Mask",
-    description: "Soft, lightweight mask for maximum sleeping comfort.",
+    name: "CPAP Machine",
+    category: "cpap",
+    description: "cpap second hand",
     image: image4,
+    price: 10000,
   },
-   {
+  {
     id: 5,
-    name: "Sleep Mask",
-    description: "Soft, lightweight mask for maximum sleeping comfort.",
+    name: "bipap second hand",
+    category: "bipap",
+    description: "bipap second hand",
     image: image5,
+    price: 15000,
   },
-   {
+  {
     id: 6,
-    name: "Sleep Mask",
-    description: "Soft, lightweight mask for maximum sleeping comfort.",
+    name: "CPAP Machine",
+    category: "cpap",
+    description: "cpap third hand",
     image: image6,
+    price: 12000,
   },
-   {
+  {
     id: 7,
-    name: "Sleep Mask",
-    description: "Soft, lightweight mask for maximum sleeping comfort.",
+    name: "CPAP Machine",
+    category: "cpap",
+    description: "cpap fourth hand",
     image: image7,
+    price: 8000,
   },
-   {
+  {
     id: 8,
-    name: "Sleep Mask",
+    name: "Mask",
+    category: "mask",
     description: "Soft, lightweight mask for maximum sleeping comfort.",
     image: image8,
+    price: 2000,
   },
-   
 ];
 
 export default products;

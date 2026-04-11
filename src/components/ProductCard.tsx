@@ -3,10 +3,9 @@ import type { Product } from "../types/product";
 import CallModal from "./CallModal";
 import "./ProductCard.css";
 
-
-interface Props {
+type Props = {
   product: Product;
-}
+};
 
 const ProductCard = ({ product }: Props) => {
   const [open, setOpen] = useState(false);

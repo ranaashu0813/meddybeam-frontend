@@ -5,7 +5,7 @@ import MedbeamContainer from "./MedbeamContainer";
 import WhatsAppFloating from "./WhatsAppFloating";
 import Review from "./Review";
  import AboutUs from "./AboutUs";   
-import Categories from "./Categories";
+import { Categories } from "./Categories";
 export {
   Header,
   Footer,
