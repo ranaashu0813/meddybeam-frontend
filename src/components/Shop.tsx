@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import products from "../data/products";
+import ProductCard from "./ProductCard";
 import "./Shop.css";
 
 const tabs = ["cpap", "bipap", "mask"];
@@ -42,11 +43,7 @@ const Shop: React.FC = () => {
       {/* PRODUCTS */}
       <div className="product-grid">
         {filteredProducts.map((product) => (
-          <div key={product.id} className="product-card">
-            <img src={product.image} alt={product.name} />
-            <p className="product-name">{product.name}</p>
-            <p className="product-price">₹{product.price}</p>
-          </div>
+          <ProductCard key={product.id} product={product} />
         ))}
       </div>
     </div>

@@ -18,6 +18,7 @@ const ProductCard = ({ product }: Props) => {
   </div>
         <h3>{product.name}</h3>
         <p>{product.description}</p>
+        {product.price && <p className="product-price">₹{product.price}</p>}
 
         <button onClick={() => setOpen(true)}>
           Call to Know More
