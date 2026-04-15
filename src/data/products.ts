@@ -22,8 +22,8 @@ const products: Product[] = [
   },
   {
     id: 2,
-    name: "BiPAP Machine",
-    category: "bipap",  // ✅ ADD THIS
+    name: "others",
+    category: "others",  // ✅ ADD THIS
     description: "Provides two pressure levels for comfortable breathing.",
     image: image2,
     price: 25000,
@@ -31,7 +31,7 @@ const products: Product[] = [
   {
     id: 3,
     name: "Oxygen Concentrator",
-    category: "oxygen", // ✅ ADD THIS
+    category: "Accessories", // ✅ ADD THIS
     description: "High efficiency oxygen support for home and clinical use.",
     image: image3,
     price: 30000,
@@ -54,9 +54,9 @@ const products: Product[] = [
   },
   {
     id: 6,
-    name: "CPAP Machine",
-    category: "cpap",
-    description: "cpap third hand",
+    name: "bipap Machine",
+    category: "bipap",
+    description: "bipap third hand",
     image: image6,
     price: 12000,
   },
